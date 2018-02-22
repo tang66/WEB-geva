@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>VEGA</title>
+		<link rel="stylesheet" href="dist/css/bootstrap.css" />
+		<script src="dist/js/jquery-1.11.3.js"></script>
+		<script src="dist/js/bootstrap.js"></script>
+<style>
+html{font-size:100px;}
+*{margin:0;padding:0}
+ul,li,a{list-style:none;}	
+h1,h2,h3,h4,h5{margin:0}
+.title_style{font-size:0.4rem;line-height:0.4rem;letter-spacing:5px;font-weight:bold;margin:10px 0}
+.text_style{font-size:14px;color:darkgray;text-indent: 30px;}
+.con_title{font-size:14px;font-weight:bold;color:dark;margin:3px 0;}
+.top_margin{margin-top:20px}
+a,a:hover{text-decoration:none;color:black}
+
+.header{width:100%;height:100%;display:flex}
+.header h2{font-size:0.7rem;line-height:0.7rem;letter-spacing:20px;font-weight:bold}
+.header .nav{font-size:20px;font-weight:bold;margin-top:5px}
+@media (max-width:992px ) {
+	.nav{
+		display:none
+	}	
+}
+
+.banner img{width:100%;display:flex;}
+
+.des{margin-top:15px;}
+.des img{margin-top:15px}
+
+.show{display:flex;flex-direction: row; background:#f9f9f9}
+.showimg{width:100%}
+.showtxt{display:flex;flex-direction: column;}
+.showtxt p{padding:5px 0px;margin:0 20px}
+.showtxt h4{padding:5px 0px;margin:0 20px;font-weight:bold}
+
+.show_list img{width:100%;}
+.inner{transition:transform ;}
+.inner:hover{ box-shadow:0 0 10px rgba(0, 0, 0, .5);transform:translateY(-20px) ;}
+
+
+.thing_one{padding:20px 100px 10px 0;display:flex;flex;flex-direction: column;justify-content: flex-end;align-items: flex-end;}
+.thing_one p{font-size:12px;color:darkgray;}
+
+thing_one:hover{background:gray}
+.thing_two{padding:20px 0 10px 0;position:relative}
+thing_two:hover{background:#f9f9f9}
+.thing_two h4{font-size:30px;color:darkgray;}
+.thing_two p{font-size:12px;color:darkgray;padding-bottom:17px;}
+.circle{width:10px;height:10px;border:2px solid darkgray;border-radius: 50%; position:absolute;right:20%;top:50%}
+
+.footer{background:black;padding:40px 0;}
+.footer p{color:white;margin-top:10px}
+</style>
+	</head>
+	<body>
+<div class="header" >
+	<div class="container">
+		<div class="row text-center" >
+			<div class="col-md-8 col-md-push-2">
+				<h2>VEGA</h2>
+				<div class="row nav">
+					<div class="col-md-3">
+						<p>Home</p>
+					</div>					
+					<div class="col-md-3">
+						<p><a href="#aboutus">About Us</a></p>
+					</div>					
+					<div class="col-md-3">
+						<p><a href="#our">Our Philosophy</a></p>
+					</div>
+					<div class="col-md-3">
+						<p><a href="#work">Our work</a></p>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		
+<div class="banner ">
+	<div class="container-fluid">
+		<div class="row">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>			
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			      <img src="images/15.jpg" alt="...">
+			    </div>
+			    <div class="item">
+			      <img src="images/16.jpg" alt="...">
+			    </div>
+			    <div class="item">
+			      <img src="images/17.jpg" alt="...">
+			    </div>			   
+			  </div>			
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
+	</div>
+</div>			
+<div class="des top_margin" id="aboutus">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 text-center col-md-push-3 ">
+				<h3 class="title_style">About Us</h3>
+			</div>
+			<div class="col-md-12">
+				<p class="text_style">成熟是一种明亮而不刺眼的光辉，一种圆润而不腻耳的音响，一种不需要对别人察颜观色的从容，一种终于停止了向周围申诉求告的大气，一种不理会哄闹的微笑，一种洗刷了偏激的淡漠，一种无须声张的厚实，一种并不陡峭的高度。</p>
+			</div>
+			<div class="col-md-2 col-md-push-5">
+				<img src="images/2.png"  />
+			</div>
+		</div>		
+	</div>
+</div>		
+<div class="picshow top_margin">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4  col-xs-12 show_list">
+				<div class="text-center inner">
+					<a href="Vone.html">
+					<img src="images/7.jpg" alt="" />
+					<h4 class="con_title">岁月</h4>
+					<p class="text_style">哪知岁月总是催人老,等到知时已迟了</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4  col-xs-12 show_list">
+				<div class="text-center inner">
+					<a href="Vtwo.html">
+					<img src="images/6.jpg" alt="" />
+					<h4 class="con_title" >风景</h4>
+					<p class="text_style">再美的风景,也需要欣赏他的人</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12 show_list">
+				<div class="text-center inner">
+					<a href="Vthree.html">
+					<img src="images/5.jpg" alt="" />
+					<h4 class="con_title">旅游日记</h4>
+					<p class="text_style">旅行重要的不是终点,而是过程</p>
+					</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="row" style="margin-top:40px">
+			<div class="col-md-4  col-xs-12 show_list">
+				<div class="text-center inner">
+					<a href="Vfour.html">
+					<img src="images/8.jpg" alt="" />
+					<h4 class="con_title" >相爱的人</h4>
+					<p class="text_style">犹如黑暗中的烛光,照亮了整个人类历史</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4  col-xs-12 show_list">
+				<div class="text-center inner">
+					<a href="Vfive.html">
+					<img src="images/9.jpg" alt="" />
+					<h4 class="con_title">建筑</h4>
+					<p class="text_style">不同的是外形,相同的是内在</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12 show_list">
+				<div class="text-center inner">
+					<a href="Vsix.html">
+					<img src="images/12.jpg" alt="" />
+					<h4 class="con_title" >神奇的自然</h4>
+					<p class="text_style">有一种神奇叫做孤独的孕育</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+<div class="des top_margin" id="our">
+	<div class="container" style="margin-top:15px">
+		<div class="row">
+			<div class="col-md-6 text-center col-md-push-3 ">
+				<h3 class="title_style">Our Philosophy</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p class="text_style" >生命是一条美丽而曲折的幽径，路旁有妍花的丽蝶，累累的美果，但我们很少去停留观赏，或咀嚼它，只一心一意地渴望赶到我们幻想中更加美丽的豁然开朗的大道。然而在前进的程途中，却逐渐树影凄凉，花蝶匿迹，果实无存，最后终于发觉到达一个荒漠。</p>
+			</div>
+			<div class="col-md-6">
+				<p class="text_style">人生匆匆，青春不是易失的一段。青春也是一种永恒的心态。满脸红光，嘴唇红润，腿脚灵活，这些并不是青春的全部。真正的青春啊，它是一种坚强的意志，是一种想象力的高品位，是感情的充沛饱满，是生存之泉的清澈常新。</p>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-10 col-md-push-1"  style="margin-top:10px">
+				<h4 style="color:black;font-weight:bold;line-height:25px" >“艺术可遇不可求–它不会因为你是平民而对你视若无睹，也不会因为你是王公而对你青眼有加。 天时未到，即使是最睿智的人也不能使艺术品诞生。”</h4>
+			</div>
+		</div>			
+	</div>
+</div>	
+<div class="show top_margin">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-xs-12" style="padding:0px 0px">
+				<img src="images/10.jpg" alt="" class="showimg"/>
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12 showtxt">
+				<div style="height:130px"></div>
+				<p>旅行篇</p>
+				<h4>旅行和生活的纪录</h4>
+				<p>录了作者在欧洲各国的旅行见闻和日常生活，向我们描述了活生生的欧式欧洲人的日常生活。</p>
+				<div style="height:130px"></div>
+			</div>
+		</div>
+		<div class="row" id="work">
+			<div class="col-md-6 col-sm-12 col-xs-12 showtxt"
+				 style="display:flex;flex-direction: column;align-items: flex-end;">
+				<div style="height:130px"></div>
+				<p>艺术篇</p>
+				<h4>欧洲艺术见闻录</h4>
+				<p>录了作者在欧洲各国的旅行见闻和日常生活，向我们描述了活生生的欧式欧洲人的日常生活。</p>
+				<div style="height:130px"></div>
+			</div>			
+			<div class="col-md-6 col-sm-12 col-xs-12" style="padding:0px 0px">
+				<img src="images/4.jpg" alt="" class="showimg"/>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="des top_margin">
+	<div class="container" style="margin-top:15px">
+		<div class="row">
+			<div class="col-md-6 text-center col-md-push-3 ">
+				<h3 class="title_style">Story Of Time</h3>
+			</div>
+			<div class="col-md-12">
+				<p class="text_style">成熟是一种明亮而不刺眼的光辉，一种圆润而不腻耳的音响，一种不需要对别人察颜观色的从容，一种终于停止了向周围申诉求告的大气，一种不理会哄闹的微笑，一种洗刷了偏激的淡漠，一种无须声张的厚实，一种并不陡峭的高度。</p>
+			</div>
+		</div>		
+	</div>
+</div>	
+
+<!--<div class="things">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 thing_list" style="border:2px solid green">
+				<div class="row">
+					<div class="col-md-9 thing_one text-right">
+						<h6>东欧最浪漫的城市-布达佩斯</h6>
+						<p>从前在多瑙河两岸面对面坐落着两座城市，一座叫布达，另一座叫佩斯，布达在西，佩斯在东。</p>						
+					</div>
+					<div class="col-md-3 thing_two">
+						<h4>06-03</h4>						
+						<p>2017</p>	
+						
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5"></div>
+		</div>
+		
+	</div>
+	
+	
+</div>-->
+<!--<div class="things">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7   thing_list">
+				<div class="row">
+					<div class="col-md-9 text-right">
+						<h5>东欧最浪漫的城市-布达佩斯</h5>
+						<p>从前在多瑙河两岸面对面坐落着两座城市，一座叫布达，另一座叫佩斯，布达在西，佩斯在东。</p>
+					</div>
+					<div class="col-md-3 text-left">
+						<h4>06-03</h4>
+						<p>2017</p>
+					</div>
+				</div>				
+			</div>
+			<div class="col-md-5"></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-5"></div>
+			<div class="col-md-7 " style="border:1px solid red">
+				<div class="row">
+					<div class="col-md-3 text-left">
+						<h4>06-03</h4>
+						<p>2017</p>
+					</div>
+					<div class="col-md-9 text-right">
+						<h5>东欧最浪漫的城市-布达佩斯</h5>
+						<p>从前在多瑙河两岸面对面坐落着两座城市，一座叫布达，另一座叫佩斯，布达在西，佩斯在东。</p>
+					</div>
+				</div>				
+			</div>
+		
+		</div>		
+		
+	</div>
+</div>-->
+<div class="footer top_margin text-center">
+	<div class="container-fluid">
+		
+			<div class="row">
+				<div class=" col-xs-12  text-center">				
+					<img src="images/1.png" alt="" />
+					<p>Copyright © 2017 个人摄影网站. All rights reserved.</p>
+				</div>
+			</div>
+	
+	</div>
+</div>
+
+
+	</body>
+</html>
+<script>
+window.onresize=function(){    
+    var dom=document.documentElement; 	 
+    var w=dom.clientWidth;	
+    w=w>900?900:w;//需要做个判断,限制宽度,否则字体会变很大
+    w=w<300?300:w;
+    dom.style.fontSize= w/6.4+"px";	    
+}
+
+	
+	
+	
+	
+</script>
